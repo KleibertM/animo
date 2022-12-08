@@ -330,8 +330,256 @@ footer a:hover{
 .estres p:hover, .estres img:hover {
     transform: scale(1.1, 1.1);
 }
+/* TOGGLE */
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
 
-/*MODO MOVIL*/ 
-@media screen {
-    
+  display: none;
 }
+/*MODO MOVIL*/ 
+@media (max-width: 768px) {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .header {
+        height: 60px;
+    }
+    .logo {
+        position: absolute;
+        left: 50%;
+    }
+    .logo img {
+        height: 60px;
+        
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: coral;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.5s ease;
+    }
+  
+    .nav-menu-item {
+      line-height: 90px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #000000;
+    }
+  
+    .nav-toggle {
+      display: block;
+      color: coral;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+      color: coral;
+    }
+    .banner {
+        top: 60px;
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+    .banner video {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 200px;
+        margin: 5px;
+    }
+    .reel-content {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        position: relative;
+        margin: 5px auto;
+    }
+    .reel-content section {
+        margin: 5px 0;
+        visibility: hidden;
+    }
+    .reel-content article {
+        display: none;
+        visibility: hidden;
+    }
+    .more {
+        position: relative;
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
+        background-image: url(img/marco2.webp);
+        visibility: visible;
+    }
+    .more img {
+        display: none;
+    }
+    .more .title-more {
+        width: 100%;
+        margin: 5px auto;
+    }
+    .more .title-more h4 {
+        position: relative;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 20px;
+        background-color: coral;
+        color: white;
+        width: 100%;
+    }
+    .more a video{
+        width: 80%;
+        height: 120px;
+        margin: 5px 10%;
+        border-radius: 50px;
+    }
+    .more p{
+        display: flex;
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        font-size: 8px;
+        margin: 0 auto;
+        background-color: coral;
+        border-radius: 15px;
+        padding: 2px;
+        color: white;
+    }
+
+    .more .more-detail {
+        margin: 2px auto;
+        left: 10px;
+        background-color: coral;
+        color: rgb(7, 5, 5);
+        border-radius: 10px;
+    }
+    .more .more-detail li{
+        font-size: 8px;
+        margin: 1px auto;
+        border-radius: 1px;
+        padding: 0 4px;
+    }
+    .video {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .carrousel {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .carrousel h2 {
+        width: 90%;
+        padding: 10px;
+        color: white;
+    }
+    .carrousel .conteCarrousel {
+        width: 100%;
+    }
+    .carrousel .conteCarrousel .video {
+        border-radius: 40px;
+        scroll-snap-type: x mandatory;
+    }
+    .conteCarrouselController {
+        display: none;
+    }
+    footer {
+        height: 60px;
+        bottom: 0;
+        top: 100%;
+    }
+    
+    footer a{ 
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border-radius: 3px;
+        float: right;
+        margin: 0 10px;
+        transform: color .5s ease;
+        line-height: 60px;
+        width: max-content;
+    }
+    
+    footer p{
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        line-height: 60px;
+        width: max-content;
+    }
+    .estres {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin: 20px auto;
+        color: white;
+    }
+    
+    .estres section {
+        position: relative;
+        height: 450px;
+        width: 90%;
+        top: 60px;
+        background-image: url(img/marco.webp);
+        border-radius: 20px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    .estres img {
+        position: relative;
+        width: 80%;
+        margin: 20px 10%;
+        border-radius: 15px;
+        transition: .3s ease-in;
+    }
+    
+    .estres h3 {
+        text-align: center;
+        background-color: coral;
+        font-size: 2rem;
+        border-radius: 15px;
+    }
+    .estres p {
+        text-align: center;
+        margin: 10px 20px;
+        font-size: 1rem;
+        letter-spacing: 2px;
+        font-weight: 200;
+        background-color: rgb(15, 146, 140);
+        border-radius: 10px;
+        padding: 10px;
+        transition: .3s ease;
+    }
+    .estres p:hover, .estres img:hover {
+        transform: scale(1.1, 1.1);
+    }
+  }
