@@ -131,17 +131,18 @@ body {
     color: white;
 }
 .more .more-detail {
-    display: flex;
-    justify-content: space-evenly;
+    width: 90%;
     margin: 2px auto;
-    left: 2px;
-    background-color: coral;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 254, 253);
+    color: coral;
+    border-radius: 10px;
 }
 .more .more-detail li{
     font-size: 4px;
     font-weight: 300;
-    margin: 1px auto;
+    margin: 1px;
     border-radius: 1px;
 }
 .reel-content video {
@@ -154,9 +155,10 @@ body {
     visibility: visible;
     left: 40%;
     top: 0;
-    transform: scale(4, 4);
+    transform: scale(3, 3);
     border-radius: 10px;
 }
+
 .reel-content h3 {
     text-align: center;
     background-color: coral;
@@ -384,7 +386,7 @@ footer a:hover{
     .nav-menu-link:hover,
     .nav-menu-link_active {
       background: none;
-      color: #000000;
+      color: #fffafa;
     }
   
     .nav-toggle {
@@ -427,7 +429,7 @@ footer a:hover{
     }
     .reel-content article {
         display: none;
-        visibility: hidden;
+        
     }
     .more {
         position: relative;
@@ -436,6 +438,7 @@ footer a:hover{
         border-radius: 10px;
         background-image: url(img/marco2.webp);
         visibility: visible;
+        box-shadow: none;
     }
     .more img {
         display: none;
@@ -474,6 +477,7 @@ footer a:hover{
     }
 
     .more .more-detail {
+        width: 90%;
         margin: 2px auto;
         left: 10px;
         background-color: coral;
@@ -507,15 +511,12 @@ footer a:hover{
     }
     .carrousel .conteCarrousel .video {
         border-radius: 40px;
-        scroll-snap-type: x mandatory;
     }
     .conteCarrouselController {
-        display: none;
+        width: 60%;
     }
     footer {
         height: 60px;
-        bottom: 0;
-        top: 100%;
     }
     
     footer a{ 
