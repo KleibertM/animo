@@ -72,6 +72,41 @@ body {
     width: 100%;
     padding: 10px;
 }
+.ban-gf{
+    position: relative;
+    height: 90vh;
+    top: 90px;
+    margin: 0 0 0 40px;
+}
+.ban-gf img{
+    position:relative;
+    display: flex;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.extr{
+    position: relative;
+    height: 30vh;
+    width: 70%;
+    background: rgba(252, 252, 252, 0.6);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+.extr h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.extr p{
+    padding: 15px;
+    font-size: 20px;
+}
 
 .reel-card{
     position: relative;
@@ -123,7 +158,7 @@ body {
 }
 
 .box-foo {
-    height: 30vh;
+    height: 35vh;
     position: relative;
     display: flex;
     justify-content: center;
